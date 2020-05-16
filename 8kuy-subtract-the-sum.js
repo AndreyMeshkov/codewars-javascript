@@ -221,19 +221,14 @@ const fruits = {
     100: 'pineapple'
 };
 
-function SubtractSum(n){
-    const str = String(n);    
-    const arr = str.slice();    
-    let sum = 0;
-  
-    for(let s of arr) {
-        sum += Number(s)
-    }
-
-    const num = n - sum;
-    let fruit = (num > 100) ? SubtractSum(num) :  fruits[num];        
-    return fruit
-  }  
-
-  console.log('subtract:', SubtractSum(138));
+function SubtractSum(n){   
+  const arr = (n + '').slice();    
+  let sum = 0;
+  for(let s of arr) {
+      sum += Number(s);
+  }
+  const num = n - sum;
+  let fruit = (num > 100) ? SubtractSum(num) :  fruits[num]; 
+  return fruit;
+}  
   
