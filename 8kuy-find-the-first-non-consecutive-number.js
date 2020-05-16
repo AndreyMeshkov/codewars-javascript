@@ -17,5 +17,3 @@ function firstNonConsecutive (arr) {
         }
     }
 }
-
-console.log(firstNonConsecutive([1, 2, 3, 5, 8, 12]))
