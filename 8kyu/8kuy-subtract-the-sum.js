@@ -116,7 +116,7 @@
 // 98-pineapple
 // 99-apple
 // 100-pineapple
-'use strict'
+'use strict';
 
 const fruits = {
     1: 'kiwi',
