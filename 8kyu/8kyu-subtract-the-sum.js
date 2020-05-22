@@ -228,7 +228,6 @@ function SubtractSum(n){
       sum += Number(s);
   }
   const num = n - sum;
-  let fruit = (num > 100) ? SubtractSum(num) :  fruits[num]; 
-  return fruit;
+  return num > 100 ? SubtractSum(num) :  fruits[num];
 }  
   

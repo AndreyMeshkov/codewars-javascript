@@ -17,4 +17,19 @@
 //
 // 	"Jędrzej Błądziński"  -->  "Jedrzej Bladzinski"
 
+function correctPolishLetters (string) {
+	const arr = string.split('');
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] === 'ą') {arr[i] = 'a'}
+		else if (arr[i] === 'ć') {arr[i] = 'c'}
+		else if (arr[i] === 'ę') {arr[i] = 'e'}
+		else if	(arr[i] === 'ł') {arr[i] = 'l'}
+		else if	(arr[i] === 'ń') {arr[i] = 'n'}
+		else if	(arr[i] === 'ó') {arr[i] = 'o'}
+		else if	(arr[i] === 'ś') {arr[i] = 's'}
+		else if	(arr[i] === 'ź') {arr[i] = 'z'}
+		else if	(arr[i] === 'ż') {arr[i] = 'z'}
+	}
+	return arr.join('');
+}
 
